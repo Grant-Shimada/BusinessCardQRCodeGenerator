@@ -3,9 +3,6 @@ import { QRCodeCanvas } from 'qrcode.react';
 import { type ZodError } from 'zod';
 import { type BusinessCardData, BusinessCardSchema } from './schema';
 
-// Form validation configurations
-type FormErrors = Record<keyof BusinessCardData, string>;
-
 export default function BusinessCardQRCodeGenerator() {
     // ========== Form data handling ==========
     const [formData, setFormData] = useState<BusinessCardData>({
